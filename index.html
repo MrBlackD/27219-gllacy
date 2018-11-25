@@ -23,8 +23,28 @@
                     <li><a href="#">О Компании</a></li>
                 </ul>
                 <ul class="additional-navigation">
-                    <li class="search"><a href="">Поиск</a></li>
-                    <li class="login"><a href="">Вход</a></li>
+                    <li class="search">
+                        <a href="">Поиск</a>
+                        <div class="popup">
+                            <form class="search-form" action="" method="GET">
+                                <label class="visually-hidden" for="search-text">Поиск</label>
+                                <input id="search-text" type="text" placeholder="Что ищем?" name="search-text"/>
+                                <button class="visually-hidden" type="submit">Найти</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="login">
+                        <a href="">Вход</a>
+                        <div class="popup">
+                            <form class="login-form" action="" method="POST">
+                                <label>Электронная почта<input type="email" placeholder="Электронная почта" name="email"/></label>
+                                <label>Пароль<input type="password" placeholder="Пароль" name="password"/></label>
+                                <button class="button" type="submit">Войти</button>
+                            </form>
+                            <a href="">Забыли пароль?</a>
+                            <a href="">Новая регистрация</a>
+                        </div>
+                    </li>
                     <li class="cart"><a href="">Пусто</a></li>
                 </ul>
             </nav>
@@ -64,6 +84,17 @@
                     что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
                 </p>
                 <!--Здесь будет форма для подписки-->
+            </section>
+            <section class="modal modal-feedback">
+                <h2 class="visually-hidden">Форма обратной связи</h2>
+                <p>Мы обязательно вам ответим!</p>
+                <button class="close-button">Закрыть</button>
+                <form class="feedback-form">
+                    <label>Имя<input type="text" placeholder="Как вас зовут?" name="name"/></label>
+                    <label>Электронная почта<input type="email" placeholder="Ваша почта для ответа?" name="email"/></label>
+                    <label>Сообщение<textarea placeholder="Напишите что-нибудь..." name="message" rows="4"></textarea></label>
+                    <button class="button modal-submit-button" type="submit">Отправить</button>
+                </form>
             </section>
         </main>
         <footer class="main-footer">
