@@ -23,8 +23,28 @@
                 <li><a href="#">О Компании</a></li>
             </ul>
             <ul class="additional-navigation">
-                <li class="search"><a href="">Поиск</a></li>
-                <li class="login"><a href="">Вход</a></li>
+                <li class="search">
+                    <a href="">Поиск</a>
+                    <div class="popup">
+                        <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+                            <label class="visually-hidden" for="search-text">Поиск</label>
+                            <input id="search-text" type="text" placeholder="Что ищем?" name="search-text"/>
+                            <button class="visually-hidden" type="submit">Найти</button>
+                        </form>
+                    </div>
+                </li>
+                <li class="login">
+                    <a href="">Вход</a>
+                    <div class="popup">
+                        <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+                            <label>Электронная почта<input type="email" placeholder="Электронная почта" name="email"/></label>
+                            <label>Пароль<input type="password" placeholder="Пароль" name="password"/></label>
+                            <button class="button" type="submit">Войти</button>
+                        </form>
+                        <a href="">Забыли пароль?</a>
+                        <a href="">Новая регистрация</a>
+                    </div>
+                </li>
                 <li class="cart cart-filled">
                     <a href="">2 товара</a>
                     <div class="popup">
