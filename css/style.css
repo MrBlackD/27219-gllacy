@@ -1,0 +1,232 @@
+body{
+	font-family: "Roboto",Arial,sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color:#000000;
+
+	background-color:#849d8f;
+}
+
+.catalog{
+	color:white;
+}
+
+.visually-hidden{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.popup,
+.modal{
+	display:none;
+}
+
+.site-navigation,
+.additional-navigation,
+.site-navigation-submenu{
+	list-style: none;
+}
+
+.site-navigation a{
+	font-weight: bold;
+	line-height: 18px;
+	color:white;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus{
+	color:black;
+	text-decoration: none;
+
+	background-color:white;
+}
+
+.site-navigation-submenu{
+	background-color:white;
+}
+
+.site-navigation-submenu a{
+	color:black;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.site-navigation-submenu a:hover,
+.site-navigation-submenu a:focus{
+	background-color: #fbded7;
+}
+
+.site-navigation-submenu a:active{
+	background-color: #f6b5a5;
+}
+
+.site-navigation-submenu .new{
+	font-weight: 700;
+}
+
+.submenu-current{
+	color:black;
+
+	background-color: #d07058;
+}
+
+.additional-navigation a{
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	text-decoration: none;
+	color:white;
+
+	background-color:#9db1a5;
+}
+
+.additional-navigation a:hover{
+	color: black;
+
+	background-color:#f8f7f4;
+}
+
+.strengths{
+	background-color:#ebdec5;
+}
+
+.strengths-list{
+	list-style: none;
+}
+
+.strengths b{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.blog{
+	background-image: url("../img/strawberry-background.jpg");
+	background-repeat: no-repeat;
+	background-color:white;
+}
+
+.blog h2{
+	font-size:16px;
+	line-height: 22px;
+	font-weight: 500;
+}
+
+.blog a{
+	font-size:24px;
+	line-height: 30px;
+	font-weight: bold;
+	color:black;
+}
+
+.blog a:hover{
+	color:#e84d37;
+}
+.subscription{
+	background-color:#f8f7f4
+}
+
+.button{
+	font-size:18px;
+	line-height: 24px;
+	font-weight: 700;
+	color:white;
+	text-decoration: none;
+
+	border:none;
+	background-image:linear-gradient(to bottom,#e74a35,#f26843);
+}
+
+.button:hover{
+	background-image:linear-gradient(to bottom,rgba(231,74,53,0.8),rgba(242,104,67,0.8));
+}
+
+.main-footer a{
+	font-size: 13px;
+	line-height: 18px;
+	color: white;
+}
+
+.main-footer a:hover{
+	color:#ffbc9e;
+}
+
+.bold{
+	font-weight: 700;
+}
+.copyright,
+.copyright a{
+	font-size: 12px;
+	line-height: 18px;
+	color: white;
+}
+
+.footer-social,
+.footer-info{
+	list-style: none;
+}
+
+.working-hours{
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 700;
+
+}
+
+.phone-number{
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 700;
+	color:white;
+	text-decoration: none;
+}
+
+.phone-number:hover,
+.breadcrumbs a:hover,
+.icecream-title a:hover{
+	color:#ffbc9e;
+}
+
+.container h1{
+	font-size:35px;
+	line-height: 41px;
+}
+
+.breadcrumbs{
+	list-style: none;
+}
+
+.breadcrumbs a{
+	color:white;
+}
+
+.icecream-list{
+	list-style: none;
+}
+
+.icecream-title a{
+	color:white;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+}
+
+.icecream-price b{
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.cart-filled a{
+	background-color: white;
+	color:black;
+}
+
+.icecream-list li:hover{
+	background-color: #9bafa3;
+}

@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"/>
+        <link href="css/normalize.css" rel="stylesheet"/>
+        <link href="css/style.css" rel="stylesheet"/>
     </head>
     <body>
         <header class="main-header">
@@ -83,7 +86,10 @@
                     Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
                     что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
                 </p>
-                <!--Здесь будет форма для подписки-->
+                <form action="https://echo.htmlacademy.ru" method="POST">
+                    <input type="email" name="email" placeholder="Электронная почта"/>
+                    <button type="submit" class="button">Отправить</button>
+                </form>
             </section>
             <section class="modal modal-feedback">
                 <h2 class="visually-hidden">Форма обратной связи</h2>
@@ -112,7 +118,7 @@
                     <li><a href="">О производстве</a></li>
                     <li><a href="">Экологические стандарты</a></li>
                 </ul>
-                <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
+                <p class="copyright">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
             </p>
         </footer>
     </body>
