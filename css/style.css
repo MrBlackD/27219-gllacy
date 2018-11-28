@@ -94,6 +94,8 @@ body{
 
 .strengths{
 	background-color:#ebdec5;
+	background-image: url("../img/waffles-part-background.jpg");
+	background-repeat: repeat;
 }
 
 .strengths-list{
