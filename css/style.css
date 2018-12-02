@@ -178,7 +178,8 @@ body{
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 700;
-
+	
+	display: block;
 }
 
 .phone-number{
@@ -355,11 +356,9 @@ body{
 .info{
 	width: 267px;
 	text-align: right;
-}
 
-.breadcrumbs-and-info{
-	display: flex;
-	justify-content: space-between;
+	position: absolute;
+	right: 0;
 }
 
 .main-top h1{
@@ -383,5 +382,9 @@ body{
 .icecream-list li{
 	width:267px;
 
+}
+
+.main-header{
+	position: relative;
 }
 
