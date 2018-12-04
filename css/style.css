@@ -232,3 +232,104 @@ body{
 .icecream-list li:hover{
 	background-color: #9bafa3;
 }
+
+.container{
+	width: 1146px;
+	padding: 0 27px;
+	margin:0 auto;
+}
+.main-navigation{
+	display: flex;
+	margin-bottom:10px;
+}
+.logo{
+	width:154px;
+}
+
+.site-navigation{
+	width:408px;
+	margin: 0;
+	padding:0;
+}
+
+.site-navigation-submenu{
+	display: none;
+}
+
+.additional-navigation{
+	margin: 0;
+	padding:0;
+	margin-left:auto;
+	width:267px;
+	
+}
+
+.strengths{
+	margin-bottom: 40px;
+}
+
+.strengths-list{
+	margin: 0;
+	padding:0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.strengths-list li{
+	width: 485px;
+}
+
+.index-columns{
+	display: flex;
+	justify-content: space-between;
+	
+	margin-bottom: 40px;
+}
+
+.blog,
+.subscription{
+	width: 560px;
+}
+
+.main-footer{
+	display: flex;
+}
+
+.footer-social{
+	width: 267px;
+}
+
+.footer-copyright{
+	width:560px;
+}
+
+.created-by{
+	width:267px;
+}
+
+.catalog .main-header{
+	margin-bottom: 16px;
+}
+
+.title-and-breadcrumbs{
+	margin-bottom: 28px;
+}
+
+.breadcrumbs{
+	margin:0;
+	padding:0;
+}
+
+.icecream-list{
+	padding:0;
+	margin:0;
+	margin-bottom: 80px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.icecream-list li{
+	width:267px;
+	
+}
