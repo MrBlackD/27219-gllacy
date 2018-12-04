@@ -8,9 +8,9 @@
         <link href="css/style.css" rel="stylesheet"/>
     </head>
     <body>
-        <header class="main-header container">
+        <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого 'Глейси'"/></a>
+                <a><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого 'Глейси'"/></a>
                 <ul class="site-navigation">
                     <li>
                         <a href="catalog.html">Каталог</a>
@@ -76,23 +76,21 @@
                     </li>
                 </ul>
             </section>
-            <div class="columns">
-                <article class="blog">
-                    <h2>Новое в нашем блоге</h2>
-                    <a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
-                </article>
-                <section class="subscription">
-                    <h2 class="visually-hidden">Подписка</h2>
-                    <p>
-                        Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
-                        что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
-                    </p>
-                    <form action="https://echo.htmlacademy.ru" method="POST">
-                        <input type="email" name="email" placeholder="Электронная почта"/>
-                        <button type="submit" class="button">Отправить</button>
-                    </form>
-                </section>
-            </div>
+            <article class="blog">
+                <h2>Новое в нашем блоге</h2>
+                <a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
+            </article>
+            <section class="subscription">
+                <h2 class="visually-hidden">Подписка</h2>
+                <p>
+                    Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+                    что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
+                </p>
+                <form action="https://echo.htmlacademy.ru" method="POST">
+                    <input type="email" name="email" placeholder="Электронная почта"/>
+                    <button type="submit" class="button">Отправить</button>
+                </form>
+            </section>
             <section class="modal modal-feedback">
                 <h2 class="visually-hidden">Форма обратной связи</h2>
                 <p>Мы обязательно вам ответим!</p>
@@ -105,7 +103,7 @@
                 </form>
             </section>
         </main>
-        <footer class="main-footer container">
+        <footer class="main-footer">
             <ul class="footer-social">
                 <li class="social-button twitter"><a href="">Твиттер</a></li>
                 <li class="social-button instagram"><a href="">Инстаграмм</a></li>
@@ -113,20 +111,15 @@
                 <li class="social-button vkontakte"><a href="">Вконтакте</a></li>
             </ul>
             
-            <ul class="footer-info">
-                <div>
+            <p class="footer-copyright">
+                <ul class="footer-info">
                     <li class="bold"><a href="">Для поставщиков</a></li>
-                    <li><a href="">О производстве</a></li>
-                </div>
-                <div>
                     <li><a href="">Наши документы</a></li>
+                    <li><a href="">О производстве</a></li>
                     <li><a href="">Экологические стандарты</a></li>
-                </div>
-            </ul>
-            <div class="created-by">
-                <img src="img/logo-htmlacademy-small.svg" width="122" height="39" alt="Логотип HTML Academy"/>
+                </ul>
                 <p class="copyright">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
-            </div>
+            </p>
         </footer>
     </body>
 </html>

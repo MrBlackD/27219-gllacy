@@ -8,9 +8,9 @@
     <link href="css/style.css" rel="stylesheet"/>
 </head>
 <body class="catalog">
-    <header class="main-header container">
+    <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-logo" href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного 'Глейси'"/></a>
+            <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженного 'Глейси'"/></a>
             <ul class="site-navigation">
                 <li class="site-navigation-current">
                     <a href="">Каталог</a>
@@ -73,27 +73,18 @@
                 </li>
             </ul>
         </nav>
+        <p class="info">
+            <p class="working-hours">С 10 до 20,ежедневно</p>
+            <a href="tel:88124502525" class="phone-number">8 812 450-25-25</a>
+        </p>
     </header>
     <main class="container">
-        <div class="main-top">
-            <h1>Сливочное мороженое</h1>
-            <div class="breadcrumbs-and-info">
-                <ul class="breadcrumbs">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Каталог</a></li>
-                    <li class="breadcrumbs-current">Сливочное</li>
-                </ul>
-                <!-- 
-                    Пришлось перенести сюда этот блок, не увдиел других способов как сделать сетку
-                    Также пришлось поменять p на div, потому что элементы сюдя по инспектору начали вываливаться, 
-                    после применения display:flex
-                -->
-                <div class="info">
-                    <p class="working-hours">С 10 до 20,ежедневно</p>
-                    <a href="tel:88124502525" class="phone-number">8 812 450-25-25</a>
-                </div>
-            </div>
-        </div>
+        <h1>Сливочное мороженое</h1>
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li class="breadcrumbs-current">Сливочное</li>
+        </ul>
         <section class="icecream">
             <h2 class="visually-hidden">Список мороженого</h2>
             <ul class="icecream-list">
@@ -220,7 +211,7 @@
             </ul>
         </section>
     </main>
-    <footer class="main-footer container">
+    <footer class="main-footer">
             <ul class="footer-social">
                 <li class="social-button twitter"><a href="">Твиттер</a></li>
                 <li class="social-button instagram"><a href="">Инстаграмм</a></li>
@@ -228,20 +219,15 @@
                 <li class="social-button vkontakte"><a href="">Вконтакте</a></li>
             </ul>
             
-            <ul class="footer-info">
-                <div>
+            <p class="footer-copyright">
+                <ul class="footer-info">
                     <li class="bold"><a href="">Для поставщиков</a></li>
-                    <li><a href="">О производстве</a></li>
-                </div>
-                <div>
                     <li><a href="">Наши документы</a></li>
+                    <li><a href="">О производстве</a></li>
                     <li><a href="">Экологические стандарты</a></li>
-                </div>
-            </ul>
-            <div class="created-by">
-                <img src="img/logo-htmlacademy-small.svg" width="122" height="39" alt="Логотип HTML Academy"/>
-                <p class="copyright">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
-            </div>
+                </ul>
+                <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
+            </p>
         </footer>
 </body>
 </html>
