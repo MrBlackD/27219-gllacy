@@ -32,7 +32,6 @@
                             <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
                                 <label class="visually-hidden" for="search-text">Поиск</label>
                                 <input id="search-text" type="text" placeholder="Что ищем?" name="search-text"/>
-                                <button class="visually-hidden" type="submit">Найти</button>
                             </form>
                         </div>
                     </li>
@@ -40,12 +39,17 @@
                         <a href="">Вход</a>
                         <div class="popup">
                             <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                                <label>Электронная почта<input type="email" placeholder="Электронная почта" name="email"/></label>
-                                <label>Пароль<input type="password" placeholder="Пароль" name="password"/></label>
-                                <button class="button" type="submit">Войти</button>
+                                <label><span class="visually-hidden">Электронная почта</span><input type="email" placeholder="Электронная почта" name="email"/></label>
+                                <label><span class="visually-hidden">Пароль</span><input type="password" placeholder="Пароль" name="password"/></label>
+                                <div class="login-form-controls">
+                                    <button class="button" type="submit">Войти</button>
+                                    <div class="login-form-links">
+                                        <a href="">Забыли пароль?</a>
+                                        <a href="">Новая регистрация</a>
+                                    </div>
+                                </div>
                             </form>
-                            <a href="">Забыли пароль?</a>
-                            <a href="">Новая регистрация</a>
+
                         </div>
                     </li>
                     <li class="cart"><a href=""><span class="visually-hidden">Корзина</span>Пусто</a></li>
@@ -87,35 +91,35 @@
                         Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
                         что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
                     </p>
-                    <form action="https://echo.htmlacademy.ru" method="POST">
+                    <form class="subscription-form" action="https://echo.htmlacademy.ru" method="POST">
                         <input type="email" name="email" placeholder="Электронная почта"/>
                         <button type="submit" class="button">Отправить</button>
                     </form>
                 </section>
             </div>
-            <section class="modal modal-feedback">
+            <section class="popup modal-feedback">
                 <h2 class="visually-hidden">Форма обратной связи</h2>
                 <p>Мы обязательно вам ответим!</p>
-                <button class="close-button">Закрыть</button>
+                <button class="close-button"><span class="visually-hidden">Закрыть</span></button>
                 <form class="feedback-form" method="POST" action="https://echo.htmlacademy.ru">
-                    <label>Имя<input type="text" placeholder="Как вас зовут?" name="name"/></label>
-                    <label>Электронная почта<input type="email" placeholder="Ваша почта для ответа?" name="email"/></label>
-                    <label>Сообщение<textarea placeholder="Напишите что-нибудь..." name="message" rows="4"></textarea></label>
+                    <label><span class="visually-hidden">Имя</span><input type="text" placeholder="Как вас зовут?" name="name"/></label>
+                    <label><span class="visually-hidden">Электронная почта</span><input type="email" placeholder="Ваша почта для ответа?" name="email"/></label>
+                    <label><span class="visually-hidden">Сообщение</span><textarea placeholder="Напишите что-нибудь..." name="message" rows="4"></textarea></label>
                     <button class="button modal-submit-button" type="submit">Отправить</button>
                 </form>
             </section>
         </main>
         <footer class="main-footer container">
             <ul class="footer-social">
-                <li class="social-button twitter"><a href="">Твиттер</a></li>
-                <li class="social-button instagram"><a href="">Инстаграмм</a></li>
-                <li class="social-button facebook"><a href="">Фейсбук</a></li>
-                <li class="social-button vkontakte"><a href="">Вконтакте</a></li>
+                <li class="social-button twitter"><a href=""><span class="visually-hidden">Твиттер</span></a></li>
+                <li class="social-button instagram"><a href=""><span class="visually-hidden">Инстаграмм</span></a></li>
+                <li class="social-button facebook"><a href=""><span class="visually-hidden">Фейсбук</span></a></li>
+                <li class="social-button vkontakte"><a href=""><span class="visually-hidden">Вконтакте</span></a></li>
             </ul>
             
             <div class="footer-copyright">
                 <ul class="footer-info">
-                    <li class="bold"><a href="">Для поставщиков</a></li>
+                    <li class="bold"><a class="for-partners" href="">Для поставщиков</a></li>
                     <li><a href="">Наши документы</a></li>
                     <li><a href="">О производстве</a></li>
                     <li><a href="">Экологические стандарты</a></li>
