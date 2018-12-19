@@ -650,21 +650,6 @@ body{
 .social-button:active path{
 	fill:#e9e9e9;
 }
-.twitter {
-	/* background-image: url("../img/icon-twitter.svg") */
-}
-
-.instagram{
-	background-image: url("../img/icon-instagram.svg")
-}
-
-.facebook{
-	background-image: url("../img/icon-facebook.svg")
-}
-
-.vkontakte{
-	background-image: url("../img/icon-vk.svg")
-}
 
 .footer-info{
 	margin:0;
@@ -698,7 +683,8 @@ body{
 	width: 50%;
 }
 .footer-info li:nth-child(2n-1){
-
+	padding-left: 150px;
+	box-sizing: border-box;
 }
 
 .created-by{
