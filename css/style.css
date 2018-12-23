@@ -202,15 +202,21 @@ body{
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 700;
+	color: white;
 
 }
 
 .phone-number{
+	display: inline-block; 
+	
 	font-size: 22px;
 	line-height: 24px;
 	font-weight: 700;
 	color:white;
 	text-decoration: none;
+
+	margin-bottom: 5px;
+    margin-right: -1px;
 }
 
 .phone-number:hover,
@@ -285,11 +291,12 @@ body{
 	width:408px;
 	margin: 0;
 	padding:0;
+	margin-left: 9px;
 	
 }
 
 .site-navigation li{
-	padding: 30px 0;
+	padding: 28px 0;
 }
 .underline{
     border-bottom: 1px solid rgba(255,255,255,0.3);
@@ -363,7 +370,7 @@ body{
 	margin: 0;
 	padding:0;
 	margin-left:auto;
-	padding-top:24px;
+	padding-top:28px;
 	
 }
 
@@ -384,7 +391,7 @@ body{
 
 	width:21px;
 	height: 19px;
-	margin-left: -30px;
+	margin-left: -28px;
 
 	position: absolute;
 
@@ -447,7 +454,7 @@ body{
 	justify-content: space-between;
 }
 .strengths-list li{
-	width: 485px;
+	width: 482px;
 }
 
 .index-columns{
@@ -466,14 +473,14 @@ body{
 }
 
 .blog{
-	padding-top: 26px;
+	padding-top: 22px;
 	padding-left:20px;
 
 }
 
 .blog h2{
 	margin:0;
-	margin-bottom:13px;
+	margin-bottom:4px;
 }
 
 .blog a{
@@ -485,24 +492,28 @@ body{
 
 
 .subscription{
-	padding:0 27px;
+	padding:0 21px;
 	border:5px solid black;
 
 	border-image: url("../img/subscription-border.svg") 5;
 }
 
 .subscription p{
-	margin-top:33px;
-	margin-bottom:38px;
+	margin-top:28px;
+	margin-bottom:35px;
 }
 .subscription-form{
 	margin-bottom:35px;
 }
 .subscription-form input[type="email"]{
 	padding:12px 15px;
-	width:350px;
-
+	width:368px;
+	margin-right: 6px;
+	
 	box-sizing: border-box;
+
+	border-radius: 5px;
+    border: 1px solid rgba(178, 178, 178, 0.52);
 }
 
 .subscription-form .button{
@@ -512,6 +523,7 @@ body{
 
 .main-footer{
 	display: flex;
+	justify-content: space-between;
 }
 
 .footer-social{
@@ -519,7 +531,7 @@ body{
 }
 
 .footer-copyright{
-	width:560px;
+	width: 324px;
 }
 
 .created-by{
@@ -529,8 +541,8 @@ body{
 	text-align: right;
 }
 
-.catalog .main-header{
-	margin-bottom: 16px;
+.catalog .main-navigation{
+	margin-bottom: 6px;
 }
 
 .title-and-breadcrumbs{
@@ -582,7 +594,7 @@ body{
 .strengths b{
 	display: inline-block;
 
-	margin-bottom: 26px;
+	margin-bottom: 22px;
 }
 
 .icecream,
@@ -597,8 +609,8 @@ body{
 
 .strengths-list li::before{
 	content:"";
-	left:0;
-	top:-16px;
+	left:-2px;
+	top:-13px;
 	width:49px;
 	height:49px;
 
@@ -627,7 +639,7 @@ body{
 	display: flex;
 
 	margin:0;
-	margin-top:36px;
+	margin-top:29px;
 	padding:0;
 }
 
@@ -676,32 +688,31 @@ body{
 }
 
 .footer-info{
-	margin-top:36px;
+	margin-top: 26px;
 }
 
 .footer-info li{
 	width: 50%;
 }
-.footer-info li:nth-child(2n-1){
-	padding-left: 150px;
-	box-sizing: border-box;
-}
+
 
 .created-by{
 	font-size:12px;
 	line-height: 18px;
 	color:#ffffff;
 
-	margin-top:65px;
-	margin-left: auto;
+	margin-top:54px;
 
 	position: relative;
+}
+.created-by a{
+	font:inherit;
 }
 .created-by::before{
 	content:"";
 
 	position: absolute;
-	bottom:20px;
+	bottom:21px;
 
 	width:108px;
 	height:39px;
@@ -716,11 +727,12 @@ body{
 .main-header .info{
 	position: absolute;
 	right: 27px;
+	bottom: -32px;
 }
 
 .working-hours{
 	margin:0;
-	margin-bottom:8px;
+	margin-bottom:4px;
 
 	text-align: right;
 }
@@ -1071,4 +1083,8 @@ body{
 	font-size: 15px;
 	line-height: 18px;
 	font-weight: 700;
+}
+
+.map{
+	margin-left: -27px;
 }
