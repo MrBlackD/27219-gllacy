@@ -526,7 +526,9 @@ body{
 
 	border:5px solid black;
 
-	border-image: url("../img/subscription-border.svg") 5;
+	-o-border-image: url("../img/subscription-border.svg") 5;
+
+	   border-image: url("../img/subscription-border.svg") 5;
 }
 
 .subscription p{
@@ -1502,7 +1504,11 @@ body{
 .sorting{
 	position: relative;
 
-	appearance: none; 
+	-webkit-appearance: none;
+
+	   -moz-appearance: none;
+
+	        appearance: none; 
 
 	color:white;
 
@@ -1706,7 +1712,8 @@ body{
 }
 
 .pagination .prev{
-	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	        transform: rotate(180deg);
 	margin-top: -4px;
 }
 
