@@ -1800,3 +1800,7 @@ input.text-box:focus{
 
 	background-color: #d07058;
 }
+
+.map iframe{
+	background-image: url("../img/map.jpg");
+}
