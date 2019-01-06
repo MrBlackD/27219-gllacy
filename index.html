@@ -36,7 +36,7 @@
                             <div class="popup">
                                 <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
                                     <label class="visually-hidden" for="search-text">Поиск</label>
-                                    <input id="search-text" type="text" placeholder="Что ищем?" name="search-text"/>
+                                    <input class="text-box" id="search-text" type="text" placeholder="Что ищем?" name="search-text"/>
                                 </form>
                             </div>
                         </li>
@@ -44,8 +44,8 @@
                             <a href="">Вход</a>
                             <div class="popup">
                                 <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                                    <label><span class="visually-hidden">Электронная почта</span><input type="email" placeholder="Электронная почта" name="email"/></label>
-                                    <label><span class="visually-hidden">Пароль</span><input type="password" placeholder="Пароль" name="password"/></label>
+                                    <label><span class="visually-hidden">Электронная почта</span><input class="text-box" type="email" placeholder="Электронная почта" name="email"/></label>
+                                    <label><span class="visually-hidden">Пароль</span><input class="text-box" type="password" placeholder="Пароль" name="password"/></label>
                                     <div class="login-form-controls">
                                         <button class="button" type="submit">Войти</button>
                                         <div class="login-form-links">
@@ -188,20 +188,21 @@
                             что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) 
                         </p>
                         <form class="subscription-form" action="https://echo.htmlacademy.ru" method="POST">
-                            <input type="email" name="email" placeholder="Электронная почта"/>
+                            <input class="text-box" type="email" name="email" placeholder="Электронная почта"/>
                             <button type="submit" class="button">Отправить</button>
                         </form>
                     </section>
                 </div>
                 <section class="map">
-                    <section class="contact-us">
+                    <h2 class="visually-hidden">Как с нами связаться</h2>
+                    <div class="contact-us">
                         <p>Адрес главного офиса и офлайн-магазина:</p>
                         <p class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
                         <p>Для заказов по телефону:</p>
                         <p class="phone">8 812 450-25-25</p>
                         <p>(с 10 до 20 ежедневно)</p>
                         <a class="button" href="#">Форма обратной связи</a>
-                    </section>
+                    </div>
                     <img src="./img/map.jpg" alt="Карта с местоположением магазина" width="1200" height="430"/>
                 </section>
                 
@@ -210,9 +211,9 @@
                     <p>Мы обязательно вам ответим!</p>
                     <button class="close-button"><span class="visually-hidden">Закрыть</span></button>
                     <form class="feedback-form" method="POST" action="https://echo.htmlacademy.ru">
-                        <label><span class="visually-hidden">Имя</span><input type="text" placeholder="Как вас зовут?" name="name"/></label>
-                        <label><span class="visually-hidden">Электронная почта</span><input type="email" placeholder="Ваша почта для ответа?" name="email"/></label>
-                        <label><span class="visually-hidden">Сообщение</span><textarea placeholder="Напишите что-нибудь..." name="message" rows="4"></textarea></label>
+                        <label><span class="visually-hidden">Имя</span><input class="text-box" type="text" placeholder="Как вас зовут?" name="name"/></label>
+                        <label><span class="visually-hidden">Электронная почта</span><input class="text-box" type="email" placeholder="Ваша почта для ответа?" name="email"/></label>
+                        <label><span class="visually-hidden">Сообщение</span><textarea class="text-box" placeholder="Напишите что-нибудь..." name="message" rows="4"></textarea></label>
                         <button class="button modal-submit-button" type="submit">Отправить</button>
                     </form>
                 </section>
@@ -298,7 +299,10 @@
                     <li><a href="">Экологические стандарты</a></li>
                 </ul>
             </div>
-            <p class="created-by">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
+            <p class="created-by">
+                    <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">Логотип HTML Academy</span></a>
+                    Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018
+                </p>
         </footer>
         <div class="overlay"></div>
         <script src="./js/script.js"></script>

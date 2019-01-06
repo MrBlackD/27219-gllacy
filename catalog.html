@@ -12,11 +12,11 @@
             <nav class="main-navigation">
                 <a href="index.html"><img class="logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого 'Глейси'"/></a>
                 <ul class="site-navigation">
-                    <li class="site-navigation-current">
+                    <li class="site-navigation-catalog site-navigation-current">
                         <a href="">Каталог</a>
                         <ul class="site-navigation-submenu">
                             <li><a href="" class="new">Новинки</a></li>
-                            <li><a href="" class="submenu-current">Сливочное</a></li>
+                            <li class="submenu-current"><a href="" class="">Сливочное</a></li>
                             <li><a href="">Щербеты</a></li>
                             <li><a href="">Фруктовый лед</a></li>
                             <li><a href="">Мелорин</a></li>
@@ -31,7 +31,7 @@
                         <div class="popup">
                             <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
                                 <label class="visually-hidden" for="search-text">Поиск</label>
-                                <input id="search-text" type="text" placeholder="Что ищем?" name="search-text"/>
+                                <input class="text-box" id="search-text" type="text" placeholder="Что ищем?" name="search-text"/>
                                 <button class="visually-hidden" type="submit">Найти</button>
                             </form>
                         </div>
@@ -40,8 +40,8 @@
                         <a href="">Вход</a>
                         <div class="popup">
                             <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                                <label><span class="visually-hidden">Электронная почта</span><input type="email" placeholder="Электронная почта" name="email"/></label>
-                                <label><span class="visually-hidden">Пароль</span><input type="password" placeholder="Пароль" name="password"/></label>
+                                <label><span class="visually-hidden">Электронная почта</span><input class="text-box" type="email" placeholder="Электронная почта" name="email"/></label>
+                                <label><span class="visually-hidden">Пароль</span><input class="text-box" type="password" placeholder="Пароль" name="password"/></label>
                                 <div class="login-form-controls">
                                     <button class="button" type="submit">Войти</button>
                                     <div class="login-form-links">
@@ -61,14 +61,14 @@
                                     <button class="close-button"><span class="visually-hidden">Убрать из корзины</span></button>
                                     <img src="img/icecream-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"/>
                                     <p class="cart-item-name">Пломбир с апельсиновым джемом</p>
-                                    <p class="cart-item-quantity">1,5кг х <span class="price-per-unit">200 руб.</span></p>
+                                    <p class="cart-item-quantity">1,5 кг х <span class="price-per-unit">200 руб.</span></p>
                                     <p>300 руб.</p>
                                 </li>
                                 <li>
                                     <button class="close-button"><span class="visually-hidden">Убрать из корзины</span></button>
                                     <img src="img/icecream-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"/>
                                     <p class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</p>
-                                    <p class="cart-item-quantity">1,5кг х <span class="price-per-unit">300 руб.</span></p>
+                                    <p class="cart-item-quantity">1,5 кг х <span class="price-per-unit">300 руб.</span></p>
                                     <p>450 руб.</p>
                                 </li>
                             </ul>
@@ -93,7 +93,79 @@
                     <li class="breadcrumbs-current">Сливочное</li>
                 </ul>
             </div>
-            <section class="icecream">
+            <section class="filters">
+                <h2 class="visually-hidden">Сортировка и фильтры</h2>
+                <form class="filters-form" action="https://echo.htmlacademy.ru" method="GET">
+                    <div>
+                        <label class="filter-title" for="sorting">Сортировка:</label>
+                            <select class="sorting filter-item" name="sorting" id="sorting">
+                                <option selected value="popularity">по популярности</option>
+                                <option value="cheap">сначала недорогие</option>
+                                <option value="expensive">сначала дорогие</option>
+                                <option value="fatness">по жирности</option>
+                            </select>
+
+                    </div>
+                    <div>
+                        <label class="filter-title">Цена: 100 руб. – 500 руб.</label>
+                        <div class="price-filter filter-item range-filter">
+                            <div class="range-scale">
+                                <div class="range-bar"></div>
+                            </div>
+                            <div class="range-stick range-min"></div>
+                            <div class="range-stick range-max"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="filter-title">Жирность:</p>
+                        <ul class="filter-item filter-fat">
+                            <li>
+                                <input type="radio" class="filter-fat-radio" name="fat" value="0" id="fat-0"/>
+                                <label for="fat-0">0%</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="filter-fat-radio" name="fat" value="10" id="fat-10"/>
+                                <label for="fat-10">до 10%</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="filter-fat-radio" name="fat" value="30" id="fat-30"/>
+                                <label for="fat-30">до 30%</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="filter-fat-radio" name="fat" value="100" id="fat-100"/>
+                                <label for="fat-100">выше 30%</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="filter-title">Наполнители:</p>
+                        <ul class="filter-item filter-fillers">
+                            <li>
+                                <input type="checkbox" class="filter-fillers-checkbox" name="filler" value="шоколадные" id="chocolate-filler"/>
+                                <label for="chocolate-filler">шоколадные</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="filter-fillers-checkbox" name="filler" value="сахарные присыпки" id="sugar-filler"/>
+                                <label for="sugar-filler">сахарные присыпки</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="filter-fillers-checkbox" name="filler" value="фруткы" id="fruits-filler"/>
+                                <label for="fruits-filler">фруткы</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="filter-fillers-checkbox" name="filler" value="сиропы" id="syrup-filler"/>
+                                <label for="syrup-filler">сиропы</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" class="filter-fillers-checkbox" name="filler" value="джемы" id="jam-filler"/>
+                                <label for="jam-filler">джемы</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <input class="filters-submit" type="submit" value="Применть"/>
+                </form>
+            </section>
+            <section class="icecream-catalog">
                 <h2 class="visually-hidden">Список мороженого</h2>
                 <ul class="icecream-list">
                     <li class="icecream-item">
@@ -217,6 +289,19 @@
                         <a href="" class="button">Быстрый просмотр</a>
                     </li>
                 </ul>
+                <ul class="pagination">
+                        <li><a class="inactive prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#ffffff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+                        </a></li>
+                        <li><a href="" class="current">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">3</a></li>
+                        <li><a href="">4</a></li>
+                        <li><a href="">5</a></li>
+                        <li><a href="" class="next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#ffffff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg>
+                        </a></li>
+                    </ul>
             </section>
         </main>
         <footer class="main-footer container">
@@ -299,7 +384,10 @@
                     <li><a href="">Экологические стандарты</a></li>
                 </ul>
             </div>
-            <p class="created-by">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018</p>
+            <p class="created-by">
+                <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">Логотип HTML Academy</span></a>
+                Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2018
+            </p>
         </footer>
     </body>
 </html>
