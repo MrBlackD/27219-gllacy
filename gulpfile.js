@@ -6,9 +6,13 @@ const terser = require('gulp-terser');
 
 
 function cssTask(){
-    src("./css/style.css")
-    .pipe(autoprefixer())
-    .pipe(rename("style.autoprefixer.css"))
+    src("./css/style.source.css")
+    .pipe(autoprefixer({
+        browsers: [
+          "last 4 version"
+        ],
+      }))
+    .pipe(rename("style.css"))
     .pipe(dest("./css/"))
     .pipe(cleanCSS())
     .pipe(rename("style.min.css"))
@@ -28,7 +32,7 @@ function build(cb){
 
 task("build",build);
 task("watch",function(cb){
-    watch("./css/style.css",{ ignoreInitial: false }, function css(cb){
+    watch("./css/style.source.css",{ ignoreInitial: false }, function css(cb){
         cssTask();
         cb();
     })
