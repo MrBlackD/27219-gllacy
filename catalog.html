@@ -97,18 +97,18 @@
             <section class="filters">
                 <h2 class="visually-hidden">Сортировка и фильтры</h2>
                 <form class="filters-form" action="https://echo.htmlacademy.ru" method="GET">
-                    <div>
-                        <label class="filter-title" for="sorting">Сортировка:</label>
-                            <select class="sorting filter-item" name="sorting" id="sorting">
+                    <fieldset>
+                        <legend class="filter-title">Сортировка:</legend>
+                            <select class="sorting filter-item" name="sorting">
                                 <option selected value="popularity">по популярности</option>
                                 <option value="cheap">сначала недорогие</option>
                                 <option value="expensive">сначала дорогие</option>
                                 <option value="fatness">по жирности</option>
                             </select>
 
-                    </div>
-                    <div>
-                        <label class="filter-title">Цена: 100 руб. – 500 руб.</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="filter-title">Цена: 100 руб. – 500 руб.</legend>
                         <div class="price-filter filter-item range-filter">
                             <div class="range-scale">
                                 <div class="range-bar"></div>
@@ -116,9 +116,9 @@
                             <div class="range-stick range-min"></div>
                             <div class="range-stick range-max"></div>
                         </div>
-                    </div>
-                    <div>
-                        <p class="filter-title">Жирность:</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="filter-title">Жирность:</legend>
                         <ul class="filter-item filter-fat">
                             <li>
                                 <input type="radio" class="filter-fat-radio" name="fat" value="0" id="fat-0"/>
@@ -137,9 +137,9 @@
                                 <label for="fat-100">выше 30%</label>
                             </li>
                         </ul>
-                    </div>
-                    <div>
-                        <p class="filter-title">Наполнители:</p>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="filter-title">Наполнители:</legend>
                         <ul class="filter-item filter-fillers">
                             <li>
                                 <input type="checkbox" class="filter-fillers-checkbox" name="filler" value="шоколадные" id="chocolate-filler"/>
@@ -162,7 +162,7 @@
                                 <label for="jam-filler">джемы</label>
                             </li>
                         </ul>
-                    </div>
+                    </fieldset>
                     <input class="filters-submit" type="submit" value="Применть"/>
                 </form>
             </section>

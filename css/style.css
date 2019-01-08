@@ -33,35 +33,48 @@ body{
 	list-style: none;
 }
 
-.site-navigation a{
+/* .site-navigation a{ */
+.site-navigation li{
 	font-weight: bold;
 	line-height: 18px;
 	color:white;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
+.site-navigation li:hover,
+/* .site-navigation a:hover, */
+/* .site-navigation a:focus, */
+.site-navigation li:focus,
 .site-navigation-catalog:hover > a{
 	color:black;
 	text-decoration: none;
 
+	cursor: pointer;
+
 	background-color:white;
 }
 
-.site-navigation-current > a{
+.site-navigation-current{
 	color: #ffffff;
 
 	background-color: #d07058;
 }
 
 
-.site-navigation a:active{
+.site-navigation li:active{
+/* .site-navigation a:active{ */
 	-webkit-box-shadow: inset 0px 2px 1px 0 #696969;
 	        box-shadow: inset 0px 2px 1px 0 #696969;
 }
 
 .site-navigation-submenu{
 	z-index: 1;
+}
+
+.site-navigation a{
+	color:inherit;
+	font: inherit;
+	
+	text-decoration: none;
 }
 
 .site-navigation-submenu a{
@@ -312,12 +325,14 @@ body{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	
 	width:408px;
 	margin: 0;
 	padding:0;
 	margin-left: 9px;
-	
 }
 
 .site-navigation li{
@@ -327,10 +342,19 @@ body{
     border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
-.site-navigation a{
+/* .site-navigation a */
+.site-navigation li{
+
 	padding: 8px 14px;
 	border-radius: 20px;
 	text-decoration: none;
+}
+.site-navigation-submenu li{
+	border-radius: 0;
+}
+
+.site-navigation > li{
+	margin-top: 21px;
 }
 .site-navigation-catalog{
 	position: relative;
@@ -345,8 +369,8 @@ body{
 	background: #ffffff;
 
 	position: absolute;
-	top:60px;
-    left: -8px;
+    top: 38px;
+    left: -6px;
 
 	width: 144px;
 	margin:0;
@@ -356,6 +380,10 @@ body{
 	line-height: 16px;
 
 	border-radius: 5px;
+
+	-webkit-box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+
+	        box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .site-navigation-submenu li{
 	padding:0;
@@ -677,7 +705,7 @@ body{
 .icecream-list{
 	padding:0;
 	margin:0;
-	margin-bottom: 16px;
+    margin-bottom: 13px;
 
 	display: -webkit-box;
 
@@ -1615,20 +1643,12 @@ body{
 	        align-items: center;
 }
 
-.filters-form >div{
-	margin-right: 14px;
-	margin-bottom: 15px;
-}
-
-.filters-form > label,
-.filters-form > div{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+.filters-form fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 14px;
+    margin-bottom: 13px;
 }
 
 .filters-submit{
@@ -1989,7 +2009,7 @@ body{
 }
 
 .catalog .main-footer{
-	margin-top: 7px;
+	margin-top: 5px;
 }
 
 input.text-box{
