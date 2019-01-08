@@ -168,6 +168,8 @@ body{
 .button:hover{
 	background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+
+	cursor: pointer;
 }
 
 .button:active {
@@ -270,7 +272,7 @@ body{
 }
 
 .icecream-list li:hover{
-	background-color: rgb(248,247,244,0.2);
+	background-color: rgba(248,247,244,0.2);
 	border-radius: 5px;
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
 	z-index: 1;
@@ -470,6 +472,8 @@ body{
 
 .additional-navigation li{
 	margin-left:10px;
+
+	padding-bottom: 10px;
 }
 
 .strengths{
@@ -552,7 +556,6 @@ body{
 .subscription-form .button{
 	padding: 10px 19px;
 }
-
 
 .main-footer{
 	display: flex;
@@ -868,6 +871,7 @@ body{
 
 	box-sizing: border-box;
 	width:100%;
+	height: 44px;
 
 	font-size: 14px;
 	line-height: 24px;
@@ -919,6 +923,11 @@ body{
 	flex-direction: column;
 }
 
+.feedback-form input{
+	height: 44px;
+    box-sizing: border-box;
+}
+
 .modal-feedback input,
 .modal-feedback textarea{
 	padding: 9px 14px;
@@ -965,6 +974,7 @@ body{
 	padding: 9px 14px;
 	margin-bottom:20px;
 	width: 241px;
+	height: 44px;
 
 	box-sizing: border-box;
 
@@ -989,12 +999,16 @@ body{
 	font-size: 18px;
 
 	margin-right: 20px;
-	padding: 12px 25px;
+	padding: 10px 25px;
+}
+.login-form-links{
+	display: flex;
+	flex-direction: column;
 }
 
 .login-form-links a{
 	font-size: 13px;
-	line-height: 24px;
+	line-height: 22px;
 	font-weight: normal;
 }
 
@@ -1519,6 +1533,9 @@ body{
 	background-image: url(../img/icon-down-dir-white.svg);
     background-repeat: no-repeat;
     background-position: 168px 12px;
+}
+.sorting::-ms-expand {
+    display: none;
 }
 .sorting:hover{
 	color:black;
