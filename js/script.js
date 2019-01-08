@@ -15,7 +15,6 @@ feedbackButton.addEventListener("click",function(e){
     e.preventDefault();
     feedbackModal.classList.add("modal-visible");
     overlay.classList.add("visible");
-    inputName.focus();
 })
 
 feedbackModalClose.addEventListener("click",function(e){
