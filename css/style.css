@@ -130,6 +130,8 @@ body{
 	background-image: url("../img/strawberry-background.jpg");
 	background-repeat: no-repeat;
 	background-color:white;
+	background-size: cover;
+
 	margin-bottom: 40px;
 }
 
@@ -328,6 +330,8 @@ body{
 	-webkit-box-align: start;
 	    -ms-flex-align: start;
 	        align-items: flex-start;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	
 	width:408px;
 	margin: 0;
@@ -560,8 +564,8 @@ body{
 	        justify-content: space-between;
 }
 .blog{
-	padding-top: 22px;
-	padding-left:20px;
+	padding: 22px 20px;
+	margin-bottom: 58px;
 	width: 560px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -1507,6 +1511,8 @@ body{
 	        box-sizing: border-box;
 
 	border-radius: 15px;
+
+	background-size: cover;
 }
 
 .raspberry h2,
