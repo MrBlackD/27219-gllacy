@@ -100,7 +100,7 @@ body{
 	text-decoration: none;
 	color:white;
 
-	background-color:#9db1a5;
+	background-color:rgba(255,255,255,0.2);;
 }
 
 .search a:hover,
@@ -861,6 +861,8 @@ body{
 
 .main-header{
 	position: relative;
+    z-index: 1;
+
 	margin-bottom: -111px;
 }
 
