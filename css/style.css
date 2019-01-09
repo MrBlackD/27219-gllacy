@@ -564,8 +564,8 @@ body{
 	        justify-content: space-between;
 }
 .blog{
+    min-height: 220px;
 	padding: 22px 20px;
-	margin-bottom: 58px;
 	width: 560px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -861,6 +861,11 @@ body{
 
 .main-header{
 	position: relative;
+	margin-bottom: -111px;
+}
+
+.catalog .main-header{
+	margin-bottom: 0;
 }
 .main-header .info{
 	position: absolute;
@@ -1335,7 +1340,7 @@ body{
 .slider {
 	position: relative;
 	
-	padding-top: 280px;
+	padding-top: 391px;
 	
 	text-align: center;
 	color: #ffffff;
@@ -1448,6 +1453,12 @@ body{
 #product-2:checked ~ .site-wrapper label[for="product-2"],
 #product-3:checked ~ .site-wrapper label[for="product-3"] {
 	background-color: #ffffff;
+}
+
+#product-1:focus ~ .site-wrapper label[for="product-1"],
+#product-2:focus ~ .site-wrapper label[for="product-2"],
+#product-3:focus ~ .site-wrapper label[for="product-3"] {
+	outline: 5px auto rgb(77, 144, 254);
 }
 
 #product-1:checked ~ .site-wrapper {
@@ -1774,9 +1785,13 @@ body{
 
 	border-radius: 20px;
 }
-.filter-fillers input[type="checkbox"],
+/* .filter-fillers input[type="checkbox"],
 .filter-fat input[type="radio"]{
 	display: none;
+} */
+.filter-fillers-checkbox:focus ~ label,
+.filter-fat-radio:focus ~ label{
+	outline: 5px auto rgb(77, 144, 254);
 }
 
 .filter-fillers li:not(:last-of-type){
