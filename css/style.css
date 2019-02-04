@@ -863,7 +863,6 @@ body{
 	position: relative;
     z-index: 1;
 
-	margin-bottom: -111px;
 }
 
 .catalog .main-header{
@@ -1342,7 +1341,7 @@ body{
 .slider {
 	position: relative;
 	
-	padding-top: 391px;
+	padding-top: 280px;
 	
 	text-align: center;
 	color: #ffffff;
